@@ -1,3 +1,5 @@
+console.log('env', process.env.NODE_ENV)
+
 export default {
   server: {
     port: 8000, // default: 3000
@@ -50,7 +52,8 @@ export default {
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: ["@nuxtjs/tailwindcss"],
   publicRuntimeConfig: {
-    BDMapAK: 'kVesO4PkYjWXEDxxNePRXaH0mrwg5b06'
+    BDMapAK: 'kVesO4PkYjWXEDxxNePRXaH0mrwg5b06',
+    isDev: process.env.NODE_ENV === 'development'
   },
 
   // Modules: https://go.nuxtjs.dev/config-modules

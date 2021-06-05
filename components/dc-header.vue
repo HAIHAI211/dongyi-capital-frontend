@@ -3,7 +3,7 @@
     class="dc-bg-container bg-transparent w-full top-0 left-0 py-3 md:py-9 z-40"
     v-scroll="handleScroll"
   >
-    <div class="fixed text-red-200 left-0 top-0" v-if="true">
+    <div class="fixed text-red-200 left-0 top-0" v-if="$config.isDev">
       {{ $mq }} {{ mqTexts[$mq] }}
     </div>
     <div class="flex justify-between items-center">
