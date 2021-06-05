@@ -1,0 +1,49 @@
+@mixin webpbg($url) {
+  background-image: url($url);
+  .support-webp & {
+    background-image: url($url+".webp");
+  }
+}
+body{
+  @apply bg-white;
+}
+.bg-container {
+  @apply bg-no-repeat;
+  @apply bg-cover;
+  @apply bg-center;
+}
+.dc-container {
+  @apply px-5;
+
+}
+@screen md{
+  .dc-container{
+    @apply px-9;
+  }
+}
+.dc-pl{
+  @apply pl-8;
+}
+.dc-scale {
+  @apply cursor-pointer;
+  @apply transition;
+  @apply duration-300;
+  @apply ease-in-out;
+  @apply transform;
+
+  &:hover{
+    @apply -translate-y-1;
+    @apply scale-110;
+  }
+}
+
+.dc-up {
+  @apply cursor-pointer;
+  @apply transition;
+  @apply duration-300;
+  @apply ease-in-out;
+  @apply transform;
+  &:hover{
+    @apply -translate-y-1;
+  }
+}

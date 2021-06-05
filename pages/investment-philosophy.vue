@@ -1,0 +1,140 @@
+<template>
+  <div class="page">
+    <dc-banner src="/invest/p2-banner" t1="investment" t2="philosophy" />
+    <section class="dc-container pb-10">
+      <dc-title title="sec_title_2_1" desc="sec_subTitle_2_1" />
+      <h3 class=" text-darkblue text-lg font-semibold text-center pt-6">
+        {{ $t("sec_h_2_1") }}
+      </h3>
+      <div class="pt-4">
+        <img
+          :src="
+            require(`@/assets/img/invest/world${localeIsCn ? '' : '-en'}.svg`)
+          "
+          class="w-full"
+        />
+      </div>
+    </section>
+    <section
+      class="dc-container bg-container h-104 md:h-112 lg:h-152 flex flex-col items-center"
+      :style="{
+        backgroundImage: `url(${require('@/assets/img/invest/b2.png')})`
+      }"
+    >
+      <h3
+        class="text-white text-sm lg:text-base pt-6 md:pt-8 lg:pt-12 pb-10 md:pb-20"
+      >
+        {{ $t("sec_h_2_2") }}
+      </h3>
+      <div class="flex space-x-4 md:space-x-12 lg:space-x-24">
+        <dc-vicon
+          v-for="(item, index) in 4"
+          :key="item + 'dvicon'"
+          :index="index"
+          class=" w-20 md:w-36 bg-black"
+          :class="[index % 2 === 1 ? 'top-10' : '']"
+        />
+      </div>
+    </section>
+    <article
+      class="dc-container py-8 space-y-2 text-base leading-7 text-darkblue tracking-wide text-justify"
+    >
+      <p>{{ $t("k1") }}</p>
+      <p>{{ $t("k2") }}</p>
+    </article>
+    <img src="~assets/svg/invest/hand.svg" />
+    <section class="dc-container relative pb-24 lg:pb-32">
+      <dc-title title="sec_title_2_2" desc="sec_subTitle_2_2" />
+      <div class="absolute w-screen mobile:hidden left-0 top-96">
+        <div class="bg-dcwhite h-48" />
+        <div class="bg-darkblue h-96" />
+      </div>
+      <div class="flex flex-col items-center mt-16 relative mobile:hidden">
+        <div
+          class="flex h-96 relative items-center"
+          :class="[localeIsCn ? ' mb-16' : 'mb-32']"
+        >
+          <img src="~assets/img/invest/earth.png" class="h-full" />
+          <div
+            class="bg-white w-96 h-80 shadow-lg absolute left-1/2 p-4 flex flex-col"
+          >
+            <img src="~assets/svg/invest/gold1.svg" class="w-6 mb-3" />
+            <h4 class="text-darkblue text-sm pb-2">{{ $t("gg1") }}</h4>
+            <h5 class="text-darkblue text-xs tracking-wider leading-5">
+              {{ $t("gg1_1") }}
+            </h5>
+          </div>
+        </div>
+        <div class="flex h-96 relative items-center">
+          <img src="~assets/img/invest/night.png" class="h-full" />
+          <div
+            class="bg-white shadow-lg absolute -left-1/2 p-4 flex flex-col"
+            :class="[localeIsCn ? 'w-96' : 'w-120']"
+          >
+            <img src="~assets/svg/invest/gold2.svg" class="w-6 mb-3" />
+            <h4 class="text-darkblue text-sm pb-2">{{ $t("gg2") }}</h4>
+            <h5 class="text-darkblue text-xs tracking-wider leading-5">
+              <p>{{ $t("gg2_1") }}</p>
+              <p>{{ $t("gg2_2") }}</p>
+              <p>{{ $t("gg2_3") }}</p>
+              <p>{{ $t("gg2_4") }}</p>
+            </h5>
+          </div>
+        </div>
+      </div>
+      <div class="lg:hidden space-y-8">
+        <div class="shadow-lg rounded overflow-hidden">
+          <img
+            src="~assets/img/invest/earth.png"
+            class="w-full h-48 object-cover object-center"
+          />
+          <div class="p-2">
+            <div class="flex items-center pb-3">
+              <img src="~assets/svg/invest/gold1.svg" class="w-6 mr-3" />
+              <h4 class="text-darkblue text-sm">{{ $t("gg1") }}</h4>
+            </div>
+
+            <h5
+              class="text-darkblue text-xs tracking-wider leading-5 text-justify"
+            >
+              <p>{{ $t("gg1_1") }}</p>
+            </h5>
+          </div>
+        </div>
+        <div class="shadow-lg rounded overflow-hidden">
+          <img
+            src="~assets/img/invest/night.png"
+            class="w-full object-cover object-center"
+          />
+          <div class="p-2">
+            <div class="flex items-center pb-3">
+              <img src="~assets/svg/invest/gold2.svg" class="w-6 mr-3" />
+              <h4 class="text-darkblue text-sm">{{ $t("gg2") }}</h4>
+            </div>
+
+            <h5
+              class="text-darkblue text-xs tracking-wider leading-5 text-justify"
+            >
+              <p>{{ $t("gg2_1") }}</p>
+              <p>{{ $t("gg2_2") }}</p>
+              <p>{{ $t("gg2_3") }}</p>
+              <p>{{ $t("gg2_4") }}</p>
+            </h5>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</template>
+
+<script>
+import dcBanner from "../components/dc-banner.vue";
+import ComponentMixin from "@/mixins/ComponentMixin";
+import DcVicon from "@/components/dc-vicon.vue";
+export default {
+  mixins: [ComponentMixin],
+  components: { dcBanner, DcVicon }
+};
+</script>
+
+<style></style>
