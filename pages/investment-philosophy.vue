@@ -75,7 +75,7 @@
         <div class="bg-darkblue h-96" />
       </div> -->
 
-      <div class="mobile:hidden flex">
+      <div class="mobile:hidden flex mb-16">
         <img
           src="~assets/img/invest/earth.png"
           class="lg:w-100 self-start flex-shrink-0 object-center object-contain"
@@ -91,6 +91,28 @@
           <h5 class="text-darkblue tracking-wider">
             {{ $t("gg1_1") }}
           </h5>
+        </div>
+      </div>
+
+      <div class="mobile:hidden flex">
+        <img
+          src="~assets/img/invest/night.png"
+          class="lg:w-100 self-start flex-shrink-0 object-center object-contain"
+        />
+        <div class="shadow-lg p-4 flex-grow bg-dcwhite">
+          <div class="flex items-center mb-4">
+            <img src="~assets/svg/invest/gold1.svg" class="w-8 mr-3" />
+            <h4 class="text-darkblue text-xl font-bold leading-none">
+              {{ $t("gg2") }}
+            </h4>
+          </div>
+
+          <div class="text-darkblue tracking-wider">
+            <p>{{ $t("gg2_1") }}</p>
+            <p>{{ $t("gg2_2") }}</p>
+            <p>{{ $t("gg2_3") }}</p>
+            <p>{{ $t("gg2_4") }}</p>
+          </div>
         </div>
       </div>
       <!-- <div class="flex flex-col items-center mt-16 relative mobile:hidden">

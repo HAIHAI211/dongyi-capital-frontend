@@ -159,7 +159,7 @@
 
     <div class="dc-container mt-12 relative pb-20">
       <div
-        class="absolute bg-dcwhite h-96  -top-20 left-0 w-screen mobile:hidden"
+        class="absolute bg-dcwhite h-96  -top-20 left-0 w-full mobile:hidden"
       />
       <h4 class="text-black text-xl text-center pb-7 relative mobile:text-left lg:max-w-2xl lg:mx-auto">
         {{ $t("tzh_title") }}
