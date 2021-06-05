@@ -1,7 +1,7 @@
 <template>
   <div class="page">
     <div
-      class="dc-container bg-container pt-32 mobile:pt-24 h-100 mobile:h-64 bg-darkblue relative"
+      class="dc-bg-container bg-container pt-32 mobile:pt-24 h-100 mobile:h-64 bg-darkblue relative"
       :style="{
         backgroundImage: 'url(' + require('@/assets/img/index/banner.png') + ')'
       }"

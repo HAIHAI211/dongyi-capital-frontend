@@ -12,13 +12,17 @@ body{
   @apply bg-cover;
   @apply bg-center;
 }
-.dc-container {
+.dc-container, .dc-bg-container {
   @apply px-5;
-
 }
 @screen md{
-  .dc-container{
+  .dc-container,.dc-bg-container{
     @apply px-9;
+  }
+}
+@screen 2xl{
+  .dc-container{
+    @apply px-0;
   }
 }
 .dc-pl{

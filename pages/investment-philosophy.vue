@@ -3,7 +3,7 @@
     <dc-banner src="/invest/p2-banner" t1="investment" t2="philosophy" />
     <section class="dc-container pb-10">
       <dc-title title="sec_title_2_1" desc="sec_subTitle_2_1" />
-      <h3 class=" text-darkblue text-lg font-semibold text-center pt-6">
+      <h3 class="text-darkblue text-lg font-semibold text-center pt-6">
         {{ $t("sec_h_2_1") }}
       </h3>
       <div class="pt-4">
@@ -16,13 +16,29 @@
       </div>
     </section>
     <section
-      class="dc-container bg-container h-104 md:h-112 lg:h-152 flex flex-col items-center"
+      class="
+        dc-container
+        bg-container
+        h-104
+        md:h-112
+        lg:h-152
+        flex flex-col
+        items-center
+      "
       :style="{
-        backgroundImage: `url(${require('@/assets/img/invest/b2.png')})`
+        backgroundImage: `url(${require('@/assets/img/invest/b2.png')})`,
       }"
     >
       <h3
-        class="text-white text-sm lg:text-base pt-6 md:pt-8 lg:pt-12 pb-10 md:pb-20"
+        class="
+          text-white text-sm
+          lg:text-base
+          pt-6
+          md:pt-8
+          lg:pt-12
+          pb-10
+          md:pb-20
+        "
       >
         {{ $t("sec_h_2_2") }}
       </h3>
@@ -31,13 +47,22 @@
           v-for="(item, index) in 4"
           :key="item + 'dvicon'"
           :index="index"
-          class=" w-20 md:w-36 bg-black"
+          class="w-20 md:w-36 bg-black"
           :class="[index % 2 === 1 ? 'top-10' : '']"
         />
       </div>
     </section>
     <article
-      class="dc-container py-8 space-y-2 text-base leading-7 text-darkblue tracking-wide text-justify"
+      class="
+        dc-container
+        py-8
+        space-y-2
+        text-base
+        leading-7
+        text-darkblue
+        tracking-wide
+        text-justify
+      "
     >
       <p>{{ $t("k1") }}</p>
       <p>{{ $t("k2") }}</p>
@@ -45,18 +70,46 @@
     <img src="~assets/svg/invest/hand.svg" />
     <section class="dc-container relative pb-24 lg:pb-32">
       <dc-title title="sec_title_2_2" desc="sec_subTitle_2_2" />
-      <div class="absolute w-screen mobile:hidden left-0 top-96">
+      <!-- <div class="absolute w-full mobile:hidden left-0 top-96">
         <div class="bg-dcwhite h-48" />
         <div class="bg-darkblue h-96" />
+      </div> -->
+
+      <div class="mobile:hidden flex">
+        <img
+          src="~assets/img/invest/earth.png"
+          class="lg:w-100 self-start flex-shrink-0 object-center object-contain"
+        />
+        <div class="shadow-lg p-4 flex-grow bg-dcwhite">
+          <div class="flex items-center mb-4">
+            <img src="~assets/svg/invest/gold1.svg" class="w-8 mr-3" />
+            <h4 class="text-darkblue text-xl font-bold leading-none">
+              {{ $t("gg1") }}
+            </h4>
+          </div>
+
+          <h5 class="text-darkblue tracking-wider">
+            {{ $t("gg1_1") }}
+          </h5>
+        </div>
       </div>
-      <div class="flex flex-col items-center mt-16 relative mobile:hidden">
+      <!-- <div class="flex flex-col items-center mt-16 relative mobile:hidden">
         <div
           class="flex h-96 relative items-center"
           :class="[localeIsCn ? ' mb-16' : 'mb-32']"
         >
           <img src="~assets/img/invest/earth.png" class="h-full" />
           <div
-            class="bg-white w-96 h-80 shadow-lg absolute left-1/2 p-4 flex flex-col"
+            class="
+              bg-white
+              w-96
+              h-80
+              shadow-lg
+              absolute
+              left-1/2
+              p-4
+              flex flex-col
+            "
           >
             <img src="~assets/svg/invest/gold1.svg" class="w-6 mb-3" />
             <h4 class="text-darkblue text-sm pb-2">{{ $t("gg1") }}</h4>
@@ -81,7 +134,7 @@
             </h5>
           </div>
         </div>
-      </div>
+      </div> -->
       <div class="lg:hidden space-y-8">
         <div class="shadow-lg rounded overflow-hidden">
           <img
@@ -95,7 +148,12 @@
             </div>
 
             <h5
-              class="text-darkblue text-xs tracking-wider leading-5 text-justify"
+              class="
+                text-darkblue text-xs
+                tracking-wider
+                leading-5
+                text-justify
+              "
             >
               <p>{{ $t("gg1_1") }}</p>
             </h5>
@@ -113,7 +171,12 @@
             </div>
 
             <h5
-              class="text-darkblue text-xs tracking-wider leading-5 text-justify"
+              class="
+                text-darkblue text-xs
+                tracking-wider
+                leading-5
+                text-justify
+              "
             >
               <p>{{ $t("gg2_1") }}</p>
               <p>{{ $t("gg2_2") }}</p>
@@ -133,7 +196,7 @@ import ComponentMixin from "@/mixins/ComponentMixin";
 import DcVicon from "@/components/dc-vicon.vue";
 export default {
   mixins: [ComponentMixin],
-  components: { dcBanner, DcVicon }
+  components: { dcBanner, DcVicon },
 };
 </script>
 
