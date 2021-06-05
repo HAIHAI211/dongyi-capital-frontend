@@ -70,11 +70,6 @@
     <img src="~assets/svg/invest/hand.svg" />
     <section class="dc-container relative pb-24 lg:pb-32">
       <dc-title title="sec_title_2_2" desc="sec_subTitle_2_2" />
-      <!-- <div class="absolute w-full mobile:hidden left-0 top-96">
-        <div class="bg-dcwhite h-48" />
-        <div class="bg-darkblue h-96" />
-      </div> -->
-
       <div class="mobile:hidden flex mb-16">
         <img
           src="~assets/img/invest/earth.png"
@@ -101,7 +96,7 @@
         />
         <div class="shadow-lg p-4 flex-grow bg-dcwhite">
           <div class="flex items-center mb-4">
-            <img src="~assets/svg/invest/gold1.svg" class="w-8 mr-3" />
+            <img src="~assets/svg/invest/gold2.svg" class="w-8 mr-3" />
             <h4 class="text-darkblue text-xl font-bold leading-none">
               {{ $t("gg2") }}
             </h4>
@@ -115,48 +110,6 @@
           </div>
         </div>
       </div>
-      <!-- <div class="flex flex-col items-center mt-16 relative mobile:hidden">
-        <div
-          class="flex h-96 relative items-center"
-          :class="[localeIsCn ? ' mb-16' : 'mb-32']"
-        >
-          <img src="~assets/img/invest/earth.png" class="h-full" />
-          <div
-            class="
-              bg-white
-              w-96
-              h-80
-              shadow-lg
-              absolute
-              left-1/2
-              p-4
-              flex flex-col
-            "
-          >
-            <img src="~assets/svg/invest/gold1.svg" class="w-6 mb-3" />
-            <h4 class="text-darkblue text-sm pb-2">{{ $t("gg1") }}</h4>
-            <h5 class="text-darkblue text-xs tracking-wider leading-5">
-              {{ $t("gg1_1") }}
-            </h5>
-          </div>
-        </div>
-        <div class="flex h-96 relative items-center">
-          <img src="~assets/img/invest/night.png" class="h-full" />
-          <div
-            class="bg-white shadow-lg absolute -left-1/2 p-4 flex flex-col"
-            :class="[localeIsCn ? 'w-96' : 'w-120']"
-          >
-            <img src="~assets/svg/invest/gold2.svg" class="w-6 mb-3" />
-            <h4 class="text-darkblue text-sm pb-2">{{ $t("gg2") }}</h4>
-            <h5 class="text-darkblue text-xs tracking-wider leading-5">
-              <p>{{ $t("gg2_1") }}</p>
-              <p>{{ $t("gg2_2") }}</p>
-              <p>{{ $t("gg2_3") }}</p>
-              <p>{{ $t("gg2_4") }}</p>
-            </h5>
-          </div>
-        </div>
-      </div> -->
       <div class="lg:hidden space-y-8">
         <div class="shadow-lg rounded overflow-hidden">
           <img

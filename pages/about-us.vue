@@ -150,13 +150,12 @@
       </div>
     </section>
     <section
-      class="bg-container dc-container h-80 bg-mibu mobile:h-64 pt-10"
+      class="bg-container dc-container h-80 bg-mibu mobile:h-64 flex justify-center items-center"
       :style="{
         backgroundImage: `url(${require('@/assets/img/about/meeting.png')})`,
       }"
     >
-      <!-- <dc-title title="l_3_title" :isWhite="true" /> -->
-      <div class="text-white font-light leading-6 lg:leading-9 space-y-2">
+      <div class="text-white font-light leading-6 lg:leading-9 space-y-2 lg:w-200">
         <p>{{ $t("l_3_title") }}{{ $t("l_3_p_1") }}</p>
         <p>{{ $t("l_3_p_2") }}</p>
         <p>{{ $t("l_3_p_3") }}</p>

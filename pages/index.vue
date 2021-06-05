@@ -19,7 +19,7 @@
         </h1>
         <h2 class="text-white font-normal text-xs text-opacity-40">
           Seizing the opportunities of
-          Industrial Restructuring brought by<br />
+          Industrial Restructuring brought by
           Technology Innovation and Carbon Neutrality
         </h2>
       </template>
