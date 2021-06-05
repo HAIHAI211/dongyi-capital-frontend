@@ -268,7 +268,7 @@ export default {
                 "The position of countries in the industrial chain in the context of global division of labor",
               sec_title_2_2: "",
               sec_subTitle_2_2:
-                "The simultaneously developed globalization and domestic circulation",
+                "The simultaneously Developed Globalization and Domestic Circulation",
               sec_h_2_2:
                 "The World Bank conducted a survey of 146 countries and divided the value chain activities of these countries into 4 categories during 1990-2015:",
               v1: "commodity and raw material trade",

@@ -61,7 +61,6 @@
         leading-7
         text-darkblue
         tracking-wide
-        text-justify
       "
     >
       <p>{{ $t("k1") }}</p>
@@ -71,10 +70,12 @@
     <section class="dc-container relative pb-24 lg:pb-32">
       <dc-title title="sec_title_2_2" desc="sec_subTitle_2_2" />
       <div class="mobile:hidden flex mb-16">
-        <img
-          src="~assets/img/invest/earth.png"
-          class="lg:w-100 self-start flex-shrink-0 object-center object-contain"
-        />
+        <div class="lg:w-100 bg-black flex-shrink-0 flex items-center">
+          <img
+            src="~assets/img/invest/earth.png"
+            class="w-full object-center object-contain"
+          />
+        </div>
         <div class="shadow-lg p-4 flex-grow bg-dcwhite">
           <div class="flex items-center mb-4">
             <img src="~assets/svg/invest/gold1.svg" class="w-8 mr-3" />
@@ -90,10 +91,13 @@
       </div>
 
       <div class="mobile:hidden flex">
-        <img
-          src="~assets/img/invest/night.png"
-          class="lg:w-100 self-start flex-shrink-0 object-center object-contain"
-        />
+        <div class="lg:w-100 flex-shrink-0 flex items-center" style="background:#0a0923;">
+          <img
+            src="~assets/img/invest/night.png"
+            class="w-full object-center object-contain"
+          />
+        </div>
+
         <div class="shadow-lg p-4 flex-grow bg-dcwhite">
           <div class="flex items-center mb-4">
             <img src="~assets/svg/invest/gold2.svg" class="w-8 mr-3" />
@@ -122,14 +126,7 @@
               <h4 class="text-darkblue text-sm">{{ $t("gg1") }}</h4>
             </div>
 
-            <h5
-              class="
-                text-darkblue text-xs
-                tracking-wider
-                leading-5
-                text-justify
-              "
-            >
+            <h5 class="text-darkblue text-xs tracking-wider leading-5">
               <p>{{ $t("gg1_1") }}</p>
             </h5>
           </div>
@@ -145,14 +142,7 @@
               <h4 class="text-darkblue text-sm">{{ $t("gg2") }}</h4>
             </div>
 
-            <h5
-              class="
-                text-darkblue text-xs
-                tracking-wider
-                leading-5
-                text-justify
-              "
-            >
+            <h5 class="text-darkblue text-xs tracking-wider leading-5">
               <p>{{ $t("gg2_1") }}</p>
               <p>{{ $t("gg2_2") }}</p>
               <p>{{ $t("gg2_3") }}</p>

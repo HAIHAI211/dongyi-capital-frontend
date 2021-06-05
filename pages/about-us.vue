@@ -40,7 +40,7 @@
           </div>
           <span class="font-semibold text-xl ml-3">{{ $t("d_t") }}</span>
         </div>
-        <div class="text-dcgray text-base leading-7 text-justify">
+        <div class="text-dcgray text-base leading-7">
           <p>
             {{ $t("d_1") }}
           </p>
@@ -60,13 +60,7 @@
           </div>
           <span class="font-semibold text-xl ml-3">{{ $t("y_2") }}</span>
         </div>
-        <div class="text-dcgray text-base leading-7 text-justify">
-          <!-- <p>
-            <span class=" font-bold text-2xl">
-              {{ localeIsCn ? "“义”" : "The meaning of “Yi”" }}</span
-            >
-            <span v-if="localeIsCn">字的来源：</span>
-          </p> -->
+        <div class="text-dcgray text-base leading-7">
           <p>{{ $t("y_3") }}</p>
           <p>{{ $t("y_4") }}</p>
           <p>{{ $t("y_5") }}</p>

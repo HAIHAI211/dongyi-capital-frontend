@@ -1,36 +1,67 @@
 <template>
   <div class="page">
     <div
-      class="dc-bg-container bg-container pt-32 mobile:pt-24 h-100 mobile:h-64 bg-darkblue relative"
+      class="
+        dc-bg-container
+        bg-container
+        pt-32
+        mobile:pt-24
+        h-100
+        mobile:h-64
+        bg-darkblue
+        relative
+      "
       :style="{
-        backgroundImage: 'url(' + require('@/assets/img/index/banner.png') + ')'
+        backgroundImage:
+          'url(' + require('@/assets/img/index/banner.png') + ')',
       }"
     >
       <template v-if="localeIsCn">
         <h1
-          class="text-white font-semibold text-2xl leading-10 tracking-wider mobile:text-lg mobile:leading-5"
+          class="
+            text-white
+            font-semibold
+            text-2xl
+            leading-10
+            tracking-wider
+            mobile:text-lg
+            mobile:leading-5
+          "
         >
-          把握<span
-            class="font-bold text-3xl tracking-widest mobile:text-xl"
+          把握<span class="font-bold text-3xl tracking-widest mobile:text-xl"
             >科技创新、</span
           ><span class="font-bold text-3xl tracking-widest mobile:text-xl"
             >碳中和</span
           >带来的产业结构调整机遇
         </h1>
         <h2 class="text-white font-normal text-xs text-opacity-40">
-          Seizing the opportunities of
-          Industrial Restructuring brought by
+          Seizing the opportunities of Industrial Restructuring brought by
           Technology Innovation and Carbon Neutrality
         </h2>
       </template>
       <template v-else>
         <h1
-          class="text-white font-semibold text-2xl leading-10 tracking-wider mobile:text-lg mobile:leading-5 "
+          class="
+            text-white
+            font-semibold
+            text-2xl
+            leading-10
+            tracking-wider
+            mobile:text-lg
+            mobile:leading-5
+          "
         >
-          Seizing the opportunities of <br v-if="isDesktop"/>
-          <span class="font-bold text-3xl mobile:text-xl mobile:leading-6"
-            >Industrial Restructuring  brought by <br v-if="isDesktop"/> Technology Innovation and
-            Carbon Neutrality</span
+          Seizing the opportunities of<br v-if="isDesktop" />
+          <span class="font-bold text-3xl mobile:text-xl mobile:leading-6 shadow-lg"
+            >Industrial Restructuring</span
+          >
+          brought by<br v-if="isDesktop" />
+          <span class="font-bold text-3xl mobile:text-xl mobile:leading-6  shadow-lg"
+            >Technology Innovation
+          </span>
+          and
+          <span class="font-bold text-3xl mobile:text-xl mobile:leading-6  shadow-lg"
+            >Carbon Neutrality</span
           >
         </h1>
       </template>
@@ -43,9 +74,16 @@
       <dc-title title="sec_title_1" desc="sec_subTitle_1" />
 
       <article
-        class="flex flex-col lg:flex-row lg:space-x-14 xl:space-x-20 space-y-4 lg:space-y-0"
+        class="
+          flex flex-col
+          lg:flex-row
+          lg:space-x-14
+          xl:space-x-20
+          space-y-4
+          lg:space-y-0
+        "
       >
-        <div class="text-base leading-8 text-dcgray text-justify">
+        <div class="text-base leading-8 text-dcgray ">
           <p>
             {{ $t("sec_content_1_2") }}
           </p>
@@ -59,14 +97,19 @@
     <section
       class="dc-container h-120 bg-container flex flex-col items-center"
       :style="{
-        backgroundImage: 'url(' + require('@/assets/img/index/sea.png') + ')'
+        backgroundImage: 'url(' + require('@/assets/img/index/sea.png') + ')',
       }"
     >
       <h3 class="text-white font-semibold text-base pt-8 md:pb-14 pb-8">
         {{ $t("r_title") }}
       </h3>
       <div
-        class="md:flex md:items-center md:space-x-14 grid grid-cols-2 grid-rows-2"
+        class="
+          md:flex
+          md:items-center
+          md:space-x-14
+          grid grid-cols-2 grid-rows-2
+        "
       >
         <dc-ricon
           v-for="item in ricons"
@@ -79,7 +122,7 @@
     </section>
     <div class="dc-container">
       <dc-title title="sec_title_2" desc="sec_subTitle_2" />
-      <div class=" lg:hidden space-y-5">
+      <div class="lg:hidden space-y-5">
         <div class="shadow-xl bg-white">
           <img
             src="~assets/img/index/tp1.png"
@@ -116,12 +159,17 @@
     </div>
     <div class="mobile:hidden text-white lg:leading-10 md:leading-8 leading-6">
       <div
-        class="grid grid-cols-2 grid-rows-3 text-white mobile:flex  mobile:flex-col mobile:space-y-3"
+        class="
+          grid grid-cols-2 grid-rows-3
+          text-white
+          mobile:flex mobile:flex-col
+          mobile:space-y-3
+        "
       >
         <div class="bg-darkblue max-h-96">
           <div class="flex flex-col p-4 justify-center h-full">
             <p>{{ $t("sec_content_2_1") }}</p>
-            <img src="~assets/svg/index/right-arrow.svg" class=" w-3 mt-4" />
+            <img src="~assets/svg/index/right-arrow.svg" class="w-3 mt-4" />
           </div>
         </div>
         <div class="max-h-96">
@@ -139,13 +187,13 @@
         <div class="bg-darkblue max-h-96">
           <div class="flex flex-col p-3">
             <p>{{ $t("sec_content_2_2") }}</p>
-            <img src="~assets/svg/index/right-arrow.svg" class=" w-3 mt-4" />
+            <img src="~assets/svg/index/right-arrow.svg" class="w-3 mt-4" />
           </div>
         </div>
-        <div class="bg-darkblue  max-h-96">
+        <div class="bg-darkblue max-h-96">
           <div class="flex flex-col p-4 justify-center h-full">
             <p>{{ $t("sec_content_2_3") }}</p>
-            <img src="~assets/svg/index/right-arrow.svg" class=" w-3 mt-4" />
+            <img src="~assets/svg/index/right-arrow.svg" class="w-3 mt-4" />
           </div>
         </div>
         <div class="max-h-96">
@@ -159,13 +207,28 @@
 
     <div class="dc-container mt-12 relative pb-20">
       <div
-        class="absolute bg-dcwhite h-96  -top-20 left-0 w-full mobile:hidden"
+        class="absolute bg-dcwhite h-96 -top-20 left-0 w-full mobile:hidden"
       />
-      <h4 class="text-black text-xl text-center pb-7 relative mobile:text-left lg:max-w-2xl lg:mx-auto">
+      <h4
+        class="
+          text-black text-xl text-center
+          pb-7
+          relative
+          mobile:text-left
+          lg:max-w-2xl
+          lg:mx-auto
+        "
+      >
         {{ $t("tzh_title") }}
       </h4>
       <div
-        class="flex flex-col lg:flex-row lg:justify-center mobile:items-center mobile:space-y-3"
+        class="
+          flex flex-col
+          lg:flex-row
+          lg:justify-center
+          mobile:items-center
+          mobile:space-y-3
+        "
       >
         <dc-tcard
           v-for="(item, index) in 6"
@@ -190,24 +253,24 @@ export default {
         {
           title: "r_title_1",
           subTitle: "r_subTitle_1",
-          src: require("@/assets/svg/index/r1.svg")
+          src: require("@/assets/svg/index/r1.svg"),
         },
         {
           title: "r_title_2",
           subTitle: "r_subTitle_2",
-          src: require("@/assets/svg/index/r2.svg")
+          src: require("@/assets/svg/index/r2.svg"),
         },
         {
           title: "r_title_3",
           subTitle: "r_subTitle_3",
-          src: require("@/assets/svg/index/r3.svg")
+          src: require("@/assets/svg/index/r3.svg"),
         },
         {
           title: "r_title_4",
           subTitle: "r_subTitle_4",
-          src: require("@/assets/svg/index/r4.svg")
-        }
-      ]
+          src: require("@/assets/svg/index/r4.svg"),
+        },
+      ],
       // tcards: [
       //   {
       //     title: "tzh_f_t_1",
@@ -219,10 +282,10 @@ export default {
   head() {
     // return this.$nuxtI18nHead({ addSeoAttributes: true });
     return {
-      title: this.$t("title")
+      title: this.$t("title"),
     };
   },
-  components: { DcTitle, DcRicon, DcTcard }
+  components: { DcTitle, DcRicon, DcTcard },
 };
 </script>
 
