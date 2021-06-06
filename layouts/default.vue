@@ -13,16 +13,31 @@ import DcFooter from "@/components/dc-footer.vue";
 export default {
   components: { DcHeader, DcFooter },
   head() {
+    console.log('$config.webp', this.$config.webp)
+    let webpClassName
+    switch (this.$config.webp) {
+      case 0:
+        webpClassName = 'webp-nocheck'
+        break
+      case true:
+        webpClassName = 'webp'
+        break
+      case false:
+        webpClassName = 'nowebp'
+    }
     return {
+      bodyAttrs: {
+        class: webpClassName,
+      },
       script: [
         {
           hid: "bdMapJs",
           src: `//api.map.baidu.com/api?v=3.0&type=webgl&ak=${this.$config.BDMapAK}`,
-          defer: false
-        }
-      ]
+          defer: false,
+        },
+      ],
     };
-  }
+  },
 };
 </script>
 

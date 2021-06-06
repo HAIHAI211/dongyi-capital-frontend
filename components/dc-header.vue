@@ -5,6 +5,7 @@
   >
     <div class="fixed text-red-200 left-0 top-0" v-if="$config.isDev">
       {{ $mq }} {{ mqTexts[$mq] }}
+      <span>{{$config.webp}}</span>
     </div>
     <div class="flex justify-between items-center">
       <nuxt-link :to="localePath('/', $i18n.locale)" v-slot="{ navigate }" custom class="dc-scale">

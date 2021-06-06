@@ -1,6 +1,6 @@
 <template>
   <div class="page">
-    <dc-banner src="/invest/p2-banner" t1="investment" t2="philosophy" />
+    <dc-banner class="invest-banner-bgimg" t1="investment" t2="philosophy" />
     <section class="dc-container pb-10">
       <dc-title title="sec_title_2_1" desc="sec_subTitle_2_1" />
       <h3 class="text-darkblue text-lg font-semibold text-center pt-6">
@@ -17,6 +17,7 @@
     </section>
     <section
       class="
+        invest2-bgimg
         dc-container
         bg-container
         h-104
@@ -25,9 +26,6 @@
         flex flex-col
         items-center
       "
-      :style="{
-        backgroundImage: `url(${require('@/assets/img/invest/b2.png')})`,
-      }"
     >
       <h3
         class="

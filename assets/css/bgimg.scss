@@ -1,0 +1,40 @@
+@mixin webpbg($url) {
+    background-image: url($url);
+    .webp-nocheck & {
+      background-image: none;
+    }
+    .webp & {
+      background-image: url($url+".webp");
+    }
+}
+
+.index-banner-bgimg{
+  @include webpbg("../img/index/banner.png");
+}
+.sea-bgimg{
+  @include webpbg("../img/index/sea.png");
+}
+.footer-bgimg{
+  @include webpbg("../img/footer.png");
+}
+.hand-bgimg{
+  @include webpbg('../img/about/h.png')
+}
+.blue-bgimg{
+  @include webpbg('../img/about/blue.png')
+}
+.meeting-bgimg{
+  @include webpbg('../img/about/meeting.png')
+}
+.invest2-bgimg{
+  @include webpbg('../img/invest/b2.png')
+}
+.invest-banner-bgimg{
+  @include webpbg('../img/invest/p2-banner.png')
+}
+.about-banner-bgimg{
+  @include webpbg('../img/about/p3-banner.png')
+}
+.join-banner-bgimg{
+  @include webpbg('../img/join/p4-banner.png')
+}

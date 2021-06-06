@@ -2,6 +2,7 @@
   <div class="page">
     <div
       class="
+        index-banner-bgimg
         dc-bg-container
         bg-container
         pt-32
@@ -11,10 +12,6 @@
         bg-darkblue
         relative
       "
-      :style="{
-        backgroundImage:
-          'url(' + require('@/assets/img/index/banner.png') + ')',
-      }"
     >
       <template v-if="localeIsCn">
         <h1
@@ -52,15 +49,18 @@
           "
         >
           Seizing the opportunities of<br v-if="isDesktop" />
-          <span class="font-bold text-3xl mobile:text-xl mobile:leading-6 shadow-lg"
+          <span
+            class="font-bold text-3xl mobile:text-xl mobile:leading-6 shadow-lg"
             >Industrial Restructuring</span
           >
           brought by<br v-if="isDesktop" />
-          <span class="font-bold text-3xl mobile:text-xl mobile:leading-6  shadow-lg"
+          <span
+            class="font-bold text-3xl mobile:text-xl mobile:leading-6 shadow-lg"
             >Technology Innovation
           </span>
           and
-          <span class="font-bold text-3xl mobile:text-xl mobile:leading-6  shadow-lg"
+          <span
+            class="font-bold text-3xl mobile:text-xl mobile:leading-6 shadow-lg"
             >Carbon Neutrality</span
           >
         </h1>
@@ -83,7 +83,7 @@
           lg:space-y-0
         "
       >
-        <div class="text-base leading-8 text-dcgray ">
+        <div class="text-base leading-8 text-dcgray">
           <p>
             {{ $t("sec_content_1_2") }}
           </p>
@@ -95,10 +95,7 @@
       </article>
     </section>
     <section
-      class="dc-container h-120 bg-container flex flex-col items-center"
-      :style="{
-        backgroundImage: 'url(' + require('@/assets/img/index/sea.png') + ')',
-      }"
+      class="sea-bgimg dc-container h-120 bg-container flex flex-col items-center"
     >
       <h3 class="text-white font-semibold text-base pt-8 md:pb-14 pb-8">
         {{ $t("r_title") }}

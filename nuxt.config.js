@@ -32,7 +32,7 @@ export default {
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: ["~/assets/css/common"],
+  css: ["~/assets/css/common", '~/assets/css/bgimg'],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
@@ -43,6 +43,10 @@ export default {
     {
       src: "~/plugins/swiper.js",
       mode: "client"
+    },
+    {
+      src: '~/plugins/webp.js',
+      mode: 'client'
     }
   ],
 
@@ -53,7 +57,8 @@ export default {
   buildModules: ["@nuxtjs/tailwindcss"],
   publicRuntimeConfig: {
     BDMapAK: 'kVesO4PkYjWXEDxxNePRXaH0mrwg5b06',
-    isDev: process.env.NODE_ENV === 'development'
+    isDev: process.env.NODE_ENV === 'development',
+    webp: 0 // undefined
   },
 
   // Modules: https://go.nuxtjs.dev/config-modules

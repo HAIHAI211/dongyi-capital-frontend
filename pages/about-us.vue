@@ -1,6 +1,6 @@
 <template>
   <div class="page">
-    <dc-banner src="/about/p3-banner" t1="about" t2="us" />
+    <dc-banner class="about-banner-bgimg"  t1="about" t2="us" />
     <section class="dc-container bg-gray-50 lg:bg-white">
       <dc-title title="sec_title_3_1" desc="sec_subTitle_3_1" class="mb-8" />
 
@@ -69,16 +69,10 @@
       </div>
     </section>
     <section
-      class="bg-container bg-deepdarkblue"
-      :style="{
-        backgroundImage: `url(${require('@/assets/img/about/h.png')})`,
-      }"
+      class="hand-bgimg bg-container bg-deepdarkblue"
     >
       <div
-        class="dc-container bg-container h-full mobile:pb-10 pb-10"
-        :style="{
-          backgroundImage: `url(${require('@/assets/img/about/blue.png')})`,
-        }"
+        class="blue-bgimg dc-container bg-container h-full mobile:pb-10 pb-10"
       >
         <dc-title
           title="sec_title_3_2"
@@ -144,10 +138,7 @@
       </div>
     </section>
     <section
-      class="bg-container dc-container h-80 bg-mibu mobile:h-64 flex justify-center items-center"
-      :style="{
-        backgroundImage: `url(${require('@/assets/img/about/meeting.png')})`,
-      }"
+      class="meeting-bgimg bg-container dc-container h-80 bg-mibu mobile:h-64 flex justify-center items-center"
     >
       <div class="text-white font-light leading-6 lg:leading-9 space-y-2 lg:w-200">
         <p>{{ $t("l_3_title") }}{{ $t("l_3_p_1") }}</p>

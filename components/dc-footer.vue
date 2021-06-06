@@ -1,13 +1,20 @@
 <template>
   <footer
-    class="h-36 bg-container pt-10 flex flex-col items-center "
-    :style="{
-      backgroundImage: 'url(' + require(`@/assets/img/footer.png`) + ')'
-    }"
+    class="footer-bgimg h-36 bg-container pt-10 flex flex-col items-center"
   >
-    <img src="~assets/logo.svg" class=" w-16" />
+    <img src="~assets/logo.svg" class="w-16" />
     <div
-      class="text-white  font-light text-sm leading-5 transform  pt-3 text-center flex flex-col items-center"
+      class="
+        text-white
+        font-light
+        text-sm
+        leading-5
+        transform
+        pt-3
+        text-center
+        flex flex-col
+        items-center
+      "
     >
       <a href="http://beian.miit.gov.cn/">沪ICP备2020025478号-1</a>
       <a
@@ -22,7 +29,7 @@
 import ComponentMixin from "@/mixins/ComponentMixin";
 export default {
   mixins: [ComponentMixin],
-  props: []
+  props: [],
 };
 </script>
 <style></style>

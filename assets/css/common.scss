@@ -1,9 +1,3 @@
-@mixin webpbg($url) {
-  background-image: url($url);
-  .support-webp & {
-    background-image: url($url+".webp");
-  }
-}
 body{
   @apply bg-white;
 }
