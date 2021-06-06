@@ -98,8 +98,8 @@
                 {{ $t("l_1_desc") }}
               </p>
             </div>
-            <img
-              src="~assets/img/about/leader1.png"
+            <dc-img
+              src="about/leader1.png"
               class="h-full object-contain object-center flex-shrink-0"
             />
           </div>
@@ -123,8 +123,8 @@
                 {{ $t("l_2_desc") }}
               </p>
             </div>
-            <img
-              src="~assets/img/about/leader2.png"
+            <dc-img
+              src="about/leader2.png"
               class="h-full object-contain object-center flex-shrink-0"
             />
           </div>
@@ -163,7 +163,7 @@
     <section class="area dc-container bg-p3blue pb-6">
       <dc-title title="area_title" :isWhite="true" />
       <div v-for="(item, index) in 2" :key="index + 'area'" class="mb-10">
-        <img :src="require(`@/assets/img/about/area${item}.png`)" class="w-full"/>
+        <dc-img :src="`about/area${item}.png`" class="w-full"/>
         <h3 class="text-gold text-xl font-bold pt-4 pb-2">
           {{ $t(`area_h_${item}`) }}
         </h3>

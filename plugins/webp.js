@@ -1,6 +1,8 @@
 /**
  * Judge whether the browser is compatible with the image of webp format
  */
+import Vue from 'vue'
+import DcImg from '@/components/dc-img.vue'
 
 const checkWebP = async () => {
     //Using the method of loading webp on iPhone, iPad and MAC Safari
@@ -53,7 +55,7 @@ export default async ({ app, store }) => {
     // document.body.classList.add(webp ? 'webp' : 'nowebp')
     document.body.classList.replace('webp-nocheck', webp ? 'webp' : 'nowebp')
     console.log('webp', webp)
-
+    Vue.component('dc-img', DcImg)
 }
 
 

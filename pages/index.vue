@@ -88,10 +88,11 @@
             {{ $t("sec_content_1_2") }}
           </p>
         </div>
-        <img
+        <dc-img src="index/AI.png" class="self-start lg:w-96 xl:w-160 flex-shrink-0"/>
+        <!-- <img
           src="~assets/img/index/AI.png"
           class="self-start lg:w-96 xl:w-160 flex-shrink-0"
-        />
+        /> -->
       </article>
     </section>
     <section
@@ -121,19 +122,15 @@
       <dc-title title="sec_title_2" desc="sec_subTitle_2" />
       <div class="lg:hidden space-y-5">
         <div class="shadow-xl bg-white">
-          <img
-            src="~assets/img/index/tp1.png"
-            class="object-cover h-32 md:h-44 w-full"
-          />
+          <dc-img src="index/tp1.png" class="object-cover h-32 md:h-44 w-full"/>
           <div class="p-4">
             <p class="text-darkblue">{{ $t("sec_content_2_1") }}</p>
-            <!-- <img src="~assets/svg/index/right-arrow.svg" class="w-3 mt-4 hidden" /> -->
           </div>
         </div>
         <div class="shadow-xl bg-white">
           <div class="bg-black">
-            <img
-              src="~assets/img/index/tp2.png"
+            <dc-img
+              src="index/tp2.png"
               class="object-contain h-32 w-full"
             />
           </div>
@@ -143,8 +140,8 @@
           </div>
         </div>
         <div class="shadow-xl bg-white">
-          <img
-            src="~assets/img/index/tp3.png"
+          <dc-img
+            src="index/tp3.png"
             class="object-cover h-32 w-full"
           />
           <div class="p-4">
@@ -170,14 +167,15 @@
           </div>
         </div>
         <div class="max-h-96">
-          <img
+          <dc-img src="index/tp1.png" class="object-cover h-full w-full"/>
+          <!-- <img
             src="~assets/img/index/tp1.png"
             class="object-cover h-full w-full"
-          />
+          /> -->
         </div>
         <div class="max-h-96">
-          <img
-            src="~assets/img/index/tp2.png"
+          <dc-img
+            src="index/tp2.png"
             class="object-cover h-full w-full"
           />
         </div>
@@ -194,8 +192,8 @@
           </div>
         </div>
         <div class="max-h-96">
-          <img
-            src="~assets/img/index/tp3.png"
+          <dc-img
+            src="index/tp3.png"
             class="object-cover h-full w-full"
           />
         </div>

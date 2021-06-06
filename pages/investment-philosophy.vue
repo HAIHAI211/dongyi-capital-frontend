@@ -69,8 +69,8 @@
       <dc-title title="sec_title_2_2" desc="sec_subTitle_2_2" />
       <div class="mobile:hidden flex mb-16">
         <div class="lg:w-100 bg-black flex-shrink-0 flex items-center">
-          <img
-            src="~assets/img/invest/earth.png"
+          <dc-img
+            src="invest/earth.png"
             class="w-full object-center object-contain"
           />
         </div>
@@ -90,8 +90,8 @@
 
       <div class="mobile:hidden flex">
         <div class="lg:w-100 flex-shrink-0 flex items-center" style="background:#0a0923;">
-          <img
-            src="~assets/img/invest/night.png"
+          <dc-img
+            src="invest/night.png"
             class="w-full object-center object-contain"
           />
         </div>
@@ -114,8 +114,8 @@
       </div>
       <div class="lg:hidden space-y-8">
         <div class="shadow-lg rounded overflow-hidden">
-          <img
-            src="~assets/img/invest/earth.png"
+          <dc-img
+            src="invest/earth.png"
             class="w-full h-48 object-cover object-center"
           />
           <div class="p-2">
@@ -130,8 +130,8 @@
           </div>
         </div>
         <div class="shadow-lg rounded overflow-hidden">
-          <img
-            src="~assets/img/invest/night.png"
+          <dc-img
+            src="invest/night.png"
             class="w-full object-cover object-center"
           />
           <div class="p-2">

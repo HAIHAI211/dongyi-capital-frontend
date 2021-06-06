@@ -1,6 +1,6 @@
 <template>
   <div class="page">
-    <dc-banner class="join-banner-bgimg"  t1="join" t2="us" />
+    <dc-banner class="join-banner-bgimg" t1="join" t2="us" />
     <div
       class="
         dc-container
@@ -62,25 +62,25 @@
       </div>
     </div>
     <div class="dc-container flex justify-center mobile:hidden">
-      <img src="~assets/img/join/s1.png" />
-      <img src="~assets/img/join/s2.png" />
-      <img src="~assets/img/join/s3.png" />
-      <img src="~assets/img/join/s4.png" />
+      <dc-img src="join/s1.png" />
+      <dc-img src="join/s2.png" />
+      <dc-img src="join/s3.png" />
+      <dc-img src="join/s4.png" />
     </div>
     <client-only>
       <div class="dc-container lg:hidden mt-8">
         <swiper :options="swiperOptions">
           <swiper-slide class="rounded-md overflow-hidden shadow-md">
-            <img src="~assets/img/join/s1.png" class="w-full" />
+            <dc-img src="join/s1.png" class="w-full" />
           </swiper-slide>
           <swiper-slide class="rounded-md overflow-hidden shadow-md">
-            <img src="~assets/img/join/s2.png" class="w-full" />
+            <dc-img src="join/s2.png" class="w-full" />
           </swiper-slide>
           <swiper-slide class="rounded-md overflow-hidden shadow-md">
-            <img src="~assets/img/join/s3.png" class="w-full" />
+            <dc-img src="join/s3.png" class="w-full" />
           </swiper-slide>
           <swiper-slide class="rounded-md overflow-hidden shadow-md">
-            <img src="~assets/img/join/s4.png" class="w-full" />
+            <dc-img src="join/s4.png" class="w-full" />
           </swiper-slide>
         </swiper>
       </div>
@@ -130,10 +130,7 @@
             >
           </p>
         </div>
-        <img
-          :src="require('@/assets/img/join/rc.png')"
-          class="w-full lg:w-144"
-        />
+        <dc-img src="join/rc.png" class="w-full lg:w-144" />
       </div>
     </section>
   </div>
@@ -159,7 +156,7 @@ export default {
   //   };
   // },
   mounted() {
-    this.loadMap()
+    this.loadMap();
     // setTimeout(() => {
     //   this.loadMap()
     // }, 5000);
