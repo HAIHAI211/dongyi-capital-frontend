@@ -22,6 +22,7 @@ const checkWebP = async () => {
  * Safari 14 supports webp format, but image / PNG is still used in dataurl
  */
 const _checkCanvasWebP = () => {
+    console.log('_checkCanvasWebP')
     const ele = document.createElement("canvas");
     if (ele && typeof ele.toDataURL === "function") {
         const dataUrl = ele.toDataURL("image/webp") || "";
@@ -31,7 +32,8 @@ const _checkCanvasWebP = () => {
 };
 
 const _checkLoadWebP = () => {
-    return new Promise < Boolean > ((resolve, reject) => {
+    console.log('_checkLoadWebP')
+    return new Promise ((resolve, reject) => {
         var img = new Image();
         let isSupportWebp = false;
         img.onload = () => {
