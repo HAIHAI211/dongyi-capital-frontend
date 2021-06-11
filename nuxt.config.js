@@ -306,7 +306,7 @@ export default {
                 "It also means sunrise, that we are still in the process of early entrepreneurship;",
               d_4: "We are a vigorous team and our business is prospering.",
               y_2: `The righteous,the suitable one`,
-              y_3: `The meaning of "suitable" later refers to the highest principles that should be respected and the highest morals that should be pursued in human social activities and interpersonal relationships.`,
+              y_3: `Taken from "The Mean", the word "suitable" later refers to the highest principles that should be respected and the highest morals that should be pursued in human social activities and interpersonal relationships.`,
               y_4: `The Master said, "The superior man in the world does not set his mind either for anything, or against anything; what is right he will follow." – “The Analects”`,
               y_5: `Meaning: Gentleman does not stipulate how to handle everything in the world, or how to handle it well. It must be based on the actual situation, as long as it is reasonable and appropriate.`,
               y_6: `We must adhere to principles in managing the company’s daily operations and activities, while still considering the flexibility and proper means.`,

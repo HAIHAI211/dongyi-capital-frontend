@@ -71,7 +71,7 @@
       <div class="dc-container lg:hidden mt-8">
         <swiper :options="swiperOptions">
           <swiper-slide class="rounded-md overflow-hidden shadow-md">
-            <dc-img src="join/s1.png" class="w-full" />
+            <img src="~assets/img/join/s1.png" class="w-full" />
           </swiper-slide>
           <swiper-slide class="rounded-md overflow-hidden shadow-md">
             <dc-img src="join/s2.png" class="w-full" />
@@ -80,7 +80,7 @@
             <dc-img src="join/s3.png" class="w-full" />
           </swiper-slide>
           <swiper-slide class="rounded-md overflow-hidden shadow-md">
-            <dc-img src="join/s4.png" class="w-full" />
+            <img src="~assets/img/join/s4.png" class="w-full" />
           </swiper-slide>
         </swiper>
       </div>
