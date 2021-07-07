@@ -5,7 +5,7 @@
         class="w-16 h-16 rounded-full overflow-hidden border border-gray-200 shadow-md"
       >
         <img
-          :src="require(`@/assets/svg/about/l${index + 1}.svg`)"
+          :src="index === 0 ? require(`@/assets/img/about/leader1.jpeg`) : require(`@/assets/svg/about/l2.svg`)"
           class="w-full object-contain object-center"
         />
       </div>

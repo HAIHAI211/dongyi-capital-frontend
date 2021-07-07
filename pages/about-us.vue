@@ -105,10 +105,6 @@
                 {{ $t("l_1_desc") }}
               </p>
             </div>
-            <!-- <dc-img
-              src="about/leader1.png"
-              class="h-full object-contain object-center flex-shrink-0"
-            /> -->
             <img
               class="h-full object-contain object-center flex-shrink-0"
               :src="require('@/assets/img/about/leader1.jpeg')"
