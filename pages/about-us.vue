@@ -1,6 +1,6 @@
 <template>
   <div class="page">
-    <dc-banner class="about-banner-bgimg"  t1="about" t2="us" />
+    <dc-banner class="about-banner-bgimg" t1="about" t2="us" />
     <section class="dc-container bg-gray-50 lg:bg-white">
       <dc-title title="sec_title_3_1" desc="sec_subTitle_3_1" class="mb-8" />
 
@@ -68,9 +68,7 @@
         </div>
       </div>
     </section>
-    <section
-      class="hand-bgimg bg-container bg-deepdarkblue"
-    >
+    <section class="hand-bgimg bg-container bg-deepdarkblue">
       <div
         class="blue-bgimg dc-container bg-container h-full mobile:pb-10 pb-10"
       >
@@ -81,7 +79,16 @@
         />
         <div class="flex flex-col items-center mobile:hidden mb-8">
           <div
-            class="leader-card flex lg:w-200 lg:h-96 shadow-lg bg-white dc-scale hover:shadow-2xl"
+            class="
+              leader-card
+              flex
+              lg:w-200
+              lg:h-96
+              shadow-lg
+              bg-white
+              dc-scale
+              hover:shadow-2xl
+            "
           >
             <div class="flex-grow pt-14 pl-14 pr-8">
               <h3 class="text-darkblue text-2xl">
@@ -98,15 +105,30 @@
                 {{ $t("l_1_desc") }}
               </p>
             </div>
-            <dc-img
+            <!-- <dc-img
               src="about/leader1.png"
               class="h-full object-contain object-center flex-shrink-0"
+            /> -->
+            <img
+              class="h-full object-contain object-center flex-shrink-0"
+              :src="require('@/assets/img/about/leader1.jpeg')"
             />
           </div>
         </div>
         <div class="flex flex-col items-center mobile:hidden">
           <div
-            class="leader-card flex w-full h-52 lg:w-200 lg:h-96 shadow-lg bg-white dc-scale hover:shadow-2xl"
+            class="
+              leader-card
+              flex
+              w-full
+              h-52
+              lg:w-200
+              lg:h-96
+              shadow-lg
+              bg-white
+              dc-scale
+              hover:shadow-2xl
+            "
           >
             <div class="flex-grow pt-14 pl-14 pr-8">
               <h3 class="text-darkblue text-2xl">
@@ -138,9 +160,21 @@
       </div>
     </section>
     <section
-      class="meeting-bgimg bg-container dc-container h-80 bg-mibu mobile:h-64 flex justify-center items-center"
+      class="
+        meeting-bgimg
+        bg-container
+        dc-container
+        h-80
+        bg-mibu
+        mobile:h-64
+        flex
+        justify-center
+        items-center
+      "
     >
-      <div class="text-white font-light leading-6 lg:leading-9 space-y-2 lg:w-200">
+      <div
+        class="text-white font-light leading-6 lg:leading-9 space-y-2 lg:w-200"
+      >
         <p>{{ $t("l_3_title") }}{{ $t("l_3_p_1") }}</p>
         <p>{{ $t("l_3_p_2") }}</p>
         <p>{{ $t("l_3_p_3") }}</p>
@@ -150,7 +184,13 @@
       <dc-title title="last_title" />
       <div class="flex justify-center pb-10">
         <div
-          class="lg:grid lg:grid-cols-3 2xl:grid-cols-4 gap-10 mobile:space-y-4 mobile:w-full"
+          class="
+            lg:grid lg:grid-cols-3
+            2xl:grid-cols-4
+            gap-10
+            mobile:space-y-4
+            mobile:w-full
+          "
         >
           <dc-last
             v-for="(item, index) in 11"
@@ -163,7 +203,7 @@
     <section class="area dc-container bg-p3blue pb-6">
       <dc-title title="area_title" :isWhite="true" />
       <div v-for="(item, index) in 2" :key="index + 'area'" class="mb-10">
-        <dc-img :src="`about/area${item}.png`" class="w-full"/>
+        <dc-img :src="`about/area${item}.png`" class="w-full" />
         <h3 class="text-gold text-xl font-bold pt-4 pb-2">
           {{ $t(`area_h_${item}`) }}
         </h3>
