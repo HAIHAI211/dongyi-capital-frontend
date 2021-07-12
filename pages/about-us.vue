@@ -162,7 +162,7 @@
         dc-container
         h-80
         bg-mibu
-        mobile:h-64
+        mobile:h-80
         flex
         justify-center
         items-center
