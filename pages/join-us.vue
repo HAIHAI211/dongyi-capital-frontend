@@ -88,10 +88,10 @@
     <div class="dc-container flex my-12 items-center justify-center">
       <img src="~assets/svg/join/logo@red.svg" class="w-32 mr-3" />
       <div class="flex flex-col">
-        <div class="flex items-center">
+        <!-- <div class="flex items-center">
           <img src="~assets/svg/join/point1.svg" class="w-4 m-3" />
           <span>{{ $t("address_1") }}</span>
-        </div>
+        </div> -->
         <div class="flex items-center">
           <img src="~assets/svg/join/point2.svg" class="w-4 m-3" />
           <span>{{ $t("address_2") }}</span>

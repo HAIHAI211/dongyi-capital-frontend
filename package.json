@@ -28,7 +28,6 @@
     "@nuxtjs/tailwindcss": "3.4.3",
     "fibers": "^5.0.0",
     "sass": "^1.32.13",
-    "sass-loader": "10",
-    "sharp": "^0.26.2"
+    "sass-loader": "10"
   }
 }
